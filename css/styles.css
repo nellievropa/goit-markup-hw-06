@@ -10,6 +10,7 @@ html {
 
 :root {
   --brand-color: #2196f3;
+--brand-btn-color: #188CE8;
   --text-color-main: #212121;
   --text-color-gray: #757575;
   --black: #000000;
@@ -814,6 +815,7 @@ height: 92px; */
   display: block;
   width: 206px;
   /* outline: 1px dashed blueviolet; */
+  margin-right: 94px;
 }
 .social-link-title {
   margin-bottom: 20px;
@@ -866,6 +868,75 @@ height: 92px; */
   /* fill: var(--white); */
   background-color: var(--brand-color);
 }
+/* Container SUBMIT */
+.container-submit {
+  display: block;
+  width: 570px;
+  outline: 1px dashed blueviolet;
+}
+.container-form {
+  display: inline-flex;
+  justify-content: space-between;
+  width: 570px;
+
+}
+.form-fild-submit input {
+ 
+  margin: 0;
+  /* margin-right: 12px; */
+ width: 358px;
+  /* margin-top: 20px; */
+  padding: 15px 16px;
+
+
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 4px;
+  background-color: var(--background-color);
+}
+.form-fild-submit input::placeholder {
+  margin: 0;
+  padding: 0;
+  width:47px;
+  font-size: 16px;
+line-height: calc(20/16);
+/* display: flex;
+align-items: center; */
+letter-spacing: 0.03em;
+
+color: rgba(255, 255, 255, 0.6);
+}
+
+.submit {
+  display: inline-flex;
+  align-items: center;
+  border: none;
+  margin: 0;
+  padding: 10px 28px 10px 28px;
+  font: inherit;
+  cursor: pointer;
+  font-weight: 700;
+font-size: 16px;
+line-height: calc(30/16);
+/* display: flex;
+align-items: center;
+text-align: center; */
+letter-spacing: 0.06em;
+  border-radius: 4px;
+  color: var(--white);
+  background-color: var(--brand-color);
+  
+}
+.submit:hover,
+.submit:focus {
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+
+}
+.submit-image {
+  margin-left: 10px;
+  fill: var(--white);
+ 
+}
+
 
 /* Portpholio */
 .portfolio {
@@ -888,19 +959,20 @@ height: 92px; */
 }
 .button-secondary {
   display: inline-block;
-  background-color: var(--background-color-light);
-  color: var(--text-color-main);
+  text-align: center;
+  padding: 6px 22px;
   text-decoration: none;
   font-weight: 500;
   font-size: 16px;
   line-height: calc(26 / 16);
-  text-align: center;
   letter-spacing: 0.03em;
   cursor: pointer;
-  padding: 6px 22px;
+ 
   border-radius: 4px;
   border: none;
-  text-align: center;
+
+  color: var(--text-color-main);
+  background-color: var(--background-color-light);
 
   /* border: 2px solid transparent; - прозрачная рамка если нужно */
   transition: color 250ms var(--timing-function),
@@ -1080,7 +1152,7 @@ a {
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
 
-  /* opacity: 1; */
+  opacity: 1;
   visibility: visible;
   transform: translate(-50%, -50%) scale(1);
   transition: transform 250ms var(--timing-function),
@@ -1096,12 +1168,12 @@ a {
   margin-right: 8px;
   margin-left: 490px;
 
-  width: 30px;
-  height: 30px;
-  border-radius: 50%;
+  width: 18px;
+  height: 18px;
+  /* border-radius: 50%; */
   border: none;
 
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  /* box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25); */
 }
 .close-btn-image {
   position: absolute;
@@ -1111,4 +1183,96 @@ a {
   background-size: contain;
   /* margin-left: 490px; */
   /* box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25); */
+}
+.modal-title {
+  margin: 0;
+  padding: 0;
+  margin-bottom: 12px;
+  font-weight: 700;
+font-size: 20px;
+line-height:calc(23/20);
+text-align: center;
+letter-spacing: 0.03em;
+
+color: var(--text-color-main)
+}
+.form {
+  width: 448px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.form-fild {
+ position: relative;
+ display: flex;
+ flex-direction: column;
+ outline: 1px solid green;
+}
+
+.form-fild input {
+  
+  margin: 0;
+  margin-bottom: 10px;
+  padding-top: 11px;
+  padding-bottom: 11px;
+  padding-left: 40px;
+  border-radius: 4px;
+  font: inherit;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+
+  /* box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2); */
+/* background-color: #ececec; */
+}
+.form-fild:focus-within > .input {
+  border-color: var(--brand-color);
+}
+
+.form-fild:focus-within > .form-icon {
+  fill: var(--brand-color);
+}
+/* .form-input:focus + .form-icon {
+  border-color: var(--brand-color);
+ fill: var(--brand-color);
+} */
+.form-icon {
+  position: absolute;
+  top: 29px;
+  left: 12px;
+  display: inline-block;
+  width: 18px;
+  height: 18px;
+  fill: var(--text-color-main);
+}
+.form-label {
+  margin-bottom: 4px;
+  font-size: 12px;
+line-height: calc(14/12);
+letter-spacing: 0.01em;
+color: var(--text-color-gray);
+}
+.form-label {
+  /* position: absolute; */
+  /* top: 50%;
+  left: 12px;
+  background-color: teal;
+  transform: translateY(-50%); */
+}
+
+.submit-order {
+  display: inline-flex;
+  align-items: center;
+  padding: 10px 52px;
+  font-weight: 700;
+font-size: 16px;
+line-height: calc(30/16);
+/* display: flex;
+align-items: center;
+text-align: center; */
+letter-spacing: 0.06em;
+
+border-radius: 4px;
+border: none;
+
+color: var(--white);
+background-color: var(--brand-btn-color);
+box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);;
 }

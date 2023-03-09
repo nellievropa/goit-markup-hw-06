@@ -342,31 +342,57 @@ textarea {
   margin-bottom: 300px;
 }
 .form-fild {
-  outline: 1px solid blueviolet;
+  position: relative;
+  /* outline: 1px solid blueviolet; */
   display: flex;
   flex-direction: column;
   margin-bottom: 20px;
+
+  background-color: aqua;
+}
+
+.form-label {
+  position: absolute;
+  top: 50%;
+  left: 30px;
+  background-color: teal;
+  transform: translateY(-50%);
+  color: aliceblue;
+  transition: tramsform 250ms linear;
 }
 /* .form-fild label {
   margin-bottom: 4 px;
 } */
 .form-fild input {
   margin: 0;
-  margin-top: 5px;
+  /* margin-top: 5px; */
+
   padding: 8px 12px;
   border-radius: 6px;
   border: 1px dashed palevioletred;
-  font-size: 25px;
+  /* font-size: 25px; */
 }
 /* варіант як можно зробити ширину рамки на весь блок*/
 
 /* .form-fild input {
   width: 100%;
 } */
+
+/* метка - она должна стоять после инпута (сосед добавляется "+"), чтоб ее можно біло описать */
+ .form-input:focus + .form-label,
+ .form-input:not(:placeholder-shown) + .form-label {
+  color:red;
+  transform: translateY(-50px);
+ }
+ .form-input:placeholder-shown {
+  background-color: aqua;
+ }
+
 .form-fild input::placeholder {
   color: blueviolet;
-  text-align: right;
+  /* text-align: right; */
 }
+
 
 .group {
 margin-bottom: 24px;
