@@ -633,7 +633,8 @@ background-image: url(../images/icons/feature-icons/astronaut1.svg);
   fill: var(--icon-color);
   /* background-color:pink; */
 
-  transition: fill 250ms var(--timing-function);
+  transition: fill 250ms var(--timing-function),
+  background-color 250ms var(--timing-function);
 }
 .social-list {
   display: flex;
@@ -703,7 +704,8 @@ height: 92px; */
   border-radius: 4px;
   fill: var(--icon-color);
 
-  transition: fill 250ms var(--timing-function);
+  transition: fill 250ms var(--timing-function),
+  border-color 250ms var(--timing-function);
 }
 /* li */
 .clients-link-list {
@@ -844,7 +846,8 @@ height: 92px; */
   fill: var(--white);
   background: rgba(255, 255, 255, 0.1);
 
-  transition: fill 250ms var(--timing-function);
+  transition: fill 250ms var(--timing-function),
+  background-color 250ms var(--timing-function);
 }
 /* UL */
 .social-list-footer {
@@ -900,7 +903,9 @@ height: 92px; */
   text-align: center;
 
   /* border: 2px solid transparent; - прозрачная рамка если нужно */
-  transition: color 250ms var(--timing-function);
+  transition: color 250ms var(--timing-function),
+  background-color 250ms var(--timing-function),
+  box-shadow 250ms var(--timing-function);
 }
 .button-secondary:hover,
 .button-secondary:focus {
