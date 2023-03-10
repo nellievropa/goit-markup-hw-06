@@ -342,25 +342,38 @@
 
         <!-- выбирем темы, на которые хотим делать доклад ЧЕКБОКС -выбираем многое из многого-->
         <!-- name has to be the same  -->
-        <div role="group" class="group">
-          <h2 class="group-title">Виберіть тему</h2>
-         <ul class="topic-options">
+        <!-- <div role="group" class="group">
+          <h2 class="group-title">Виберіть тему</h2> -->
+          <form class="form">
+         <ul class="checkbox-options">
           <li>
-            <input type="checkbox" name="topic" value="html" id="html" />
-          <label for="html">HTML</label>
+            <label class="field">
+            <input class="checkbox" type="checkbox" name="topic" value="html" />
+            <span class="checkbox-icon"></span>
+            <span class="label">HTML</span>  
+          </label>
           </li>
        
          <li>
-          <input type="checkbox" name="topic" value="css" id="css" />
-          <label for="css">CSS</label>
+            <label class="field">
+            <input class="checkbox" type="checkbox" name="topic" value="css"/>
+            <span class="checkbox-icon"></span>
+            <span class="label">CSS</span> 
+            
+          </label>
          </li>
         
          <li>
-          <input type="checkbox" name="topic" value="pyton" id="pyton" />
-          <label for="pyton">PYTON</label>
+          <label class="field">
+            <input class="checkbox" type="checkbox" name="topic" value="pyton" />
+            <span class="checkbox-icon"></span>
+            <span class="label">PYTON</span> 
+          
+          </label>
          </li>
          </ul>
-        </div>
+        </form>
+        <!-- </div> -->
        
         <!-- Выбирем свой уровень разработчика Радіобаттон- вибір одного з багатьох!!!-->
         <!-- У группі должен біть одинаковій name!!! важно!!! чтобі можно біло вібрать только одно значение -->

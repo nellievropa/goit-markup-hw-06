@@ -868,33 +868,39 @@ height: 92px; */
   /* fill: var(--white); */
   background-color: var(--brand-color);
 }
+
+
 /* Container SUBMIT */
 .container-submit {
   display: block;
-  width: 570px;
+   width: 570px;
   outline: 1px dashed blueviolet;
 }
 .container-form {
-  display: inline-flex;
-  justify-content: space-between;
-  width: 570px;
+  display: flex;
+ justify-content:space-between;
+ 
+  /* width: 570px; */
 
 }
 .form-fild-submit input {
- 
+display: inline-block;
   margin: 0;
-  /* margin-right: 12px; */
- width: 358px;
+  margin-right: 12px;
+ width: 348px;
   /* margin-top: 20px; */
   padding: 15px 16px;
-
-
   border: 1px solid rgba(255, 255, 255, 0.3);
   border-radius: 4px;
   background-color: var(--background-color);
+  color: rgba(255, 255, 255, 0.6);
+}
+.form-fild-submit:hover,
+.form-fild-submit:focus {
+
 }
 .form-fild-submit input::placeholder {
-  margin: 0;
+  margin: 12px;
   padding: 0;
   width:47px;
   font-size: 16px;
@@ -906,6 +912,7 @@ letter-spacing: 0.03em;
 color: rgba(255, 255, 255, 0.6);
 }
 
+/* Button */
 .submit {
   display: inline-flex;
   align-items: center;
@@ -1198,20 +1205,21 @@ color: var(--text-color-main)
 }
 .form {
   width: 448px;
-  margin-left: auto;
-  margin-right: auto;
+  margin-left: 40px;
+  margin-right: 40px;
 }
 .form-fild {
  position: relative;
  display: flex;
  flex-direction: column;
+ margin-bottom: 10px;
  outline: 1px solid green;
 }
 
 .form-fild input {
   
   margin: 0;
-  margin-bottom: 10px;
+  /* margin-bottom: 10px; */
   padding-top: 11px;
   padding-bottom: 11px;
   padding-left: 40px;
@@ -1257,6 +1265,61 @@ color: var(--text-color-gray);
   transform: translateY(-50%); */
 }
 
+
+/* Field for customers comments */
+.comment-field {
+width: 100%;
+height: 138px;
+padding: 12px 16px;
+border: 1px solid rgba(33, 33, 33, 0.2);
+border-radius: 4px;
+
+resize: none;
+/* забороняє збільшувати площу введення тексту */
+}
+
+/* checkbox  */
+
+.field label {
+  display: inline;
+  align-items: end;
+  outline: 1px solid green;
+  font-size: 14px;
+line-height: calc(24/14);
+letter-spacing: 0.03em;
+color: var(--text-color-gray);
+}
+.label-policy {
+  color: var(--brand-color);
+  text-decoration: underline;
+}
+.checkbox {
+  position: absolute;
+width: 1px;
+height: 1px;
+margin: -1px;
+border: 0;
+padding: 0;
+clip: rect(0 0 0 0);
+overflow: hidden;
+
+}
+.checkbox-icon {
+ 
+  display: inline-block;
+
+  width: 16px;
+  height: 15px;
+  border: 1px solid black;
+  border-radius: 2px;
+  background-color: turquoise;
+  margin-right: 10px;
+
+  /* transition: transform 250ms linear; */
+}
+
+
+/* BUTTON submit  */
 .submit-order {
   display: inline-flex;
   align-items: center;
@@ -1274,5 +1337,5 @@ border: none;
 
 color: var(--white);
 background-color: var(--brand-btn-color);
-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);;
+box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 }
