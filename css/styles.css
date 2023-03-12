@@ -1135,6 +1135,7 @@ a {
 }
 .backdrop.is-hidden {
   opacity: 0;
+  /* дозволяє користуватися сторінкою під бекдропом */
   visibility: hidden;
   pointer-events: none;
 }
