@@ -1328,6 +1328,7 @@ overflow: hidden;
 
 .checkbox-contact-form:checked + .checkbox-icon {
   background-image: url(../images/check-icon/icon\ check.svg);
+  border-color: none;
 }
 
 /* сховали чекбокс від браузера */
