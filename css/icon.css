@@ -398,6 +398,7 @@ textarea {
 ul {
   list-style: none;
 }
+/* Input */
 .checkbox {
   /* appearance: none;
   position: absolute; круто, але підтримується не всіма браузерами, тому ховаємо за допомогою візуал хідден*/
@@ -411,6 +412,7 @@ clip: rect(0 0 0 0);
 overflow: hidden;
 
 }
+/* Label */
 .field {
   display: flex;
   align-items: center;

@@ -1275,41 +1275,61 @@ a {
 }
 
 /* Checkbox and Policy  */
-/* Label */
+
 .checkbox-form-fild {
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* outline: 1px solid red; */
+   
   margin-bottom: 30px;
 
 }
+/* Label */
 .checkbox-conact-discr {
-  display: inline-flex;
+  /* position: absolute; */
+  display: inline-block;
   align-items: center;
-  padding-left: 16px;
+  /* outline: 1px solid green; */
   font-size: 14px;
   line-height: calc(24 / 14);
   letter-spacing: 0.03em;
 
   color: var(--text-color-gray);
 }
+/* Input */
+.checkbox-contact-form {
+  
+position: absolute;
+width: 1px;
+height: 1px;
+margin: -1px;
+border: 0;
+padding: 0;
+clip: rect(0 0 0 0);
+overflow: hidden;
 
-.checkbox-conact-discr::before {
-  content: "";
+}
+
+/* опис іконки чекбоксу */
+.checkbox-icon {
   display: inline-block;
+  margin-right: 8px;
   width: 16px;
   height: 15px;
-  background-image: url(../images/check-icon/Vector.svg);
-  /* border: 1px solid black;
-  border-radius: 2px; */
-  margin-right: 8px;
+  fill: var(--black);
   cursor: pointer;
 }
-/* Input */
-.checkbox-contact-form:checked + .checkbox-conact-discr::before {
+
+.checkbox-conact-discr:focus + .checkbox-icon {
+  fill: var(--brand-btn-color);
+}
+
+.checkbox-contact-form:checked + .checkbox-icon {
   background-image: url(../images/check-icon/icon\ check.svg);
 }
-/* .checkbox-contact-form:hover */
-.checkbox-contact-form:focus + .checkbox-conact-discr::before {
- color: var(--brand-color);
-}
+
 /* сховали чекбокс від браузера */
 .visually-hidden {
   width: 1px;
