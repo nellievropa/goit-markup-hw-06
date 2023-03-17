@@ -1321,10 +1321,13 @@ overflow: hidden;
   fill: var(--black);
   cursor: pointer;
 }
-
-.checkbox-conact-discr:focus + .checkbox-icon {
+.checkbox-contact-form:focus + .checkbox-icon {
   fill: var(--brand-btn-color);
 }
+/* неправильно!!!! */
+/* .checkbox-conact-discr:focus + .checkbox-icon {
+  fill: var(--brand-btn-color);
+} */
 
 .checkbox-contact-form:checked + .checkbox-icon {
   background-image: url(../images/check-icon/icon\ check.svg);
