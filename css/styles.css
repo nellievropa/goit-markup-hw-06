@@ -39,14 +39,14 @@ a {
   padding: 0;
   margin: 0;
   list-style: none;
-  /* outline: 2px solid tomato; */
+ 
 }
 .container {
   width: 1200px;
   padding-left: 15px;
   padding-right: 15px;
   margin: 0 auto;
-  /* outline: 2px solid tomato; */
+
   /* padding-bottom: 94px; */
 }
 .section-title {
@@ -56,16 +56,12 @@ a {
   padding-top: 0;
   padding-bottom: 0;
 }
-/* ul {
+ul {
   padding: 0;
   margin: 0;
   list-style: none;
- 
-} */
-/* важно УБРАТЬ ТОЧКИ */
-/* ul {
-    list-style: none;
-} */
+}
+
 
 /* HEADER */
 .page-header {
@@ -514,7 +510,7 @@ background-image: url(../images/icons/feature-icons/astronaut1.svg);
   position: absolute; */
   /* left: 107px; */
   /* bottom: 0; */
-  z-index: 3;
+  /* z-index: 3; */
 }
 /* .descr-position.first {
   left: 107px;
